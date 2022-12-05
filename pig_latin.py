@@ -15,8 +15,13 @@ while True:
             print("\n\n")
 
         else: 
-            print("A") #useless code
-            #you must fill in this space...
+            for n in vowel:
+                for j in word:
+                    if word[0] == n:
+                        pigLatin = word.replace(j, '')
+                        print("\n\n")
+                        print(pigLatin)
+                        print("\n\n")
     
     tryAgain = input("\n\nTry again? (Press Enter else 'quit' to quit)\n")
     if tryAgain.lower() == "quit":
