@@ -8,15 +8,15 @@ while True:
 
     word = input("type word you want to make piglatin: ")
 
-    for i in word:
+    for i in range(word):
         if word[0] == vowel[i]:
             print("\n\n")
             print(word + "way")
             print("\n\n")
 
         else: 
-            for n in vowel:
-                for j in word:
+            for n in range(vowel):
+                for j in range(word):
                     if word[0] == n:
                         pigLatin = word.replace(j, '')
                         print("\n\n")
