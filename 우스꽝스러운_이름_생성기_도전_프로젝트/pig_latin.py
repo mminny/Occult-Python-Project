@@ -14,7 +14,7 @@ while True:
             print(word + "way")
             print("\n\n")
 
-        else: 
+        elif word[0] != vowel[i]:
             for n in range(vowel):
                 for j in range(word):
                     if word[0] == n:
