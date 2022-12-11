@@ -12,7 +12,7 @@ Print palindrome list
 """Find palindromes (letter version) in a dictionary file."""
 
 import load_dictionary
-word_list = load_dictionary.load('dictionary.txt')
+word_list = load_dictionary.load('2of12.txt')
 pali_list = []
 
 for word in word_list:
