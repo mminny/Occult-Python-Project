@@ -1,30 +1,10 @@
 """
-Load a text file as a list.
+pseudocode
 
-Arguments:
--dictionary.txt
-
-Exceptions:
--IOError if filename not found.
-
-Returns:
--A list of all words in a text file in lower case.
-
-Requires:
--import sys
+Load digital dictionary file as a list of words
+ Create an empty list to hold palindromes
+ Loop through each word in the word list:
+    If word sliced forward is the same as word sliced backward:
+        Append word to palindrome list
+Print palindrome list 
 """
-
-import sys
-
-def load(file):
-    """텍스트 파일을 열고 작은 순서대로 문자열을 배열로 구성한다."""
-    try:
-        with open(file) as in_file:
-            loaded_txt = in_file.read().strip().split('\n')
-            loaded_txt = [x.lower() for x in loaded_txt]
-            return loaded_txt
-
-    except IOError as e:
-        print("{}\nError opening {}. Terminating program.".format(e, file),
-                file=sys.stderr)
-        sys.exit(1)
