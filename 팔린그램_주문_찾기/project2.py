@@ -14,7 +14,7 @@ Print palindrome list
 import load_dictionary
 
 word_list = load_dictionary.load('/Users/gimminseong/Desktop/Occult Python Project/팔린그램_주문_찾기/2of12.txt')
-"""If you get a error message such 'No such file or directory: , you should try copy file's path and paste!!!"""
+"""If you get a error message such 'No such file or directory: , you should try to copy file's path and paste!!!"""
 pali_list = []
 
 for word in word_list:
