@@ -43,4 +43,4 @@ palingrams_sorted = sorted(palingrams)
 # display list of palingrams
 print("\nNumber of palingrams = {}\n".format(len(palingrams_sorted)))
 for first, second in palingrams_sorted:
-    print("{} {}", format(first, second))
+    print("{} {}".format(first, second))
